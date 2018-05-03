@@ -1,3 +1,3 @@
 # vscode-abt-script README
 
-Extension for syntax highlighting ABT CPM chemistry scripts.
+Extension for syntax highlighting ABT CPM chemistry scripts.abc
