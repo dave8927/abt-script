@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ABT Script",
+	"patterns": [
+		{"include": "#pump"},
+		{"include": "#comments"},
+		{"include": "#tempset"},
+		{"include": "#blockread"},
+		{"include": "#IRread"},
+		{"include": "#pressure1"},
+		{"include": "#pressure2"},
+		{"include": "#numbers"}
+	],
+	"repository": {
+		"pump": {
+			"patterns": [{
+				"name": "support.class.built-in.applescript",
+				"match": "\\/\\d\\S+"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "punctuation.definition.comment.abtscript",
+				"match": "\\t.+"
+			}]
+		},
+		"tempset": {
+			"patterns": [{
+				"name": "keyword.control.tell.applescript",
+				"match": "T\\d\\S+"
+			}]
+		},
+		"blockread": {
+			"patterns": [{
+				"name": "support.function.standard-suite.applescript",
+				"match": "b(\\>|\\<)\\d\\S+"
+			}]
+		},
+		"IRread": {
+			"patterns": [{
+				"name": "support.function.standard-suite.applescript",
+				"match": "i\\>\\d\\S+"
+			}]
+		},
+		"pressure1": {
+			"patterns": [{
+				"name": "string.unquoted.css",
+				"match": "\\+\\S+"
+			}]
+		},
+		"pressure2": {
+			"patterns": [{
+				"name": "string.unquoted.css",
+				"match": "F\\d\\S+"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "support.constant.property-value.css",
+				"match": "\\*\\w+"
+			}]
+		}
+	},
+	"scopeName": "source.abt"
+}
