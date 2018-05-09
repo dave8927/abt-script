@@ -1,26 +1,26 @@
 {
     "name": "vscode-abt-script",
-    "displayName": "ABT Script",
-    "description": "Language for ABT CPM chemistry system",
+    "displayName": "vscode-abt-script",
+    "description": "Language for ABT CPM scripting",
     "version": "0.0.1",
     "publisher": "dave8927",
     "engines": {
-        "vscode": "^1.22.0"
+        "vscode": "^1.23.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [{
             "id": "abtscript",
-            "aliases": ["ABT Script", "abtscript", "abt-script", "vscode-abt-script"],
-			"firstLine": "\t#!vscode-abt-script",
+            "aliases": ["ABT Script", "abtscript"],
+            "extensions": [".txt"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "ABTscript",
+            "language": "abtscript",
             "scopeName": "source.abt",
-            "path": "./syntaxes/vscode-abt-script.tmLanguage.json"
+            "path": "./syntaxes/abtscript.tmLanguage.json"
         }]
     }
 }
